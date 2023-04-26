@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sondage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1 id="title">Sondage</h1>
+    </div>
+
+    <p id="description">
+      Merci de prendre le temps pour nous aider à améliorer la formation DWWM
+    </p>
+
+    <form id="survey-form">
+      <div class="row">
+        <label for="name" id="name-label"> Nom</label>
+
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-input"
+          placeholder="Entrez votre nom"
+          required
+        />
+      </div>
+
+      <div class="row">
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-input"
+          placeholder="Entrez votre email"
+          required
+        />
+      </div>
+
+      <div class="row">
+        <label for="number" id="number-label"> Age</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="10"
+          max="99"
+          class="form-input"
+          placeholder="Entrez votre âge"
+        />
+      </div>
+
+      <div class="row">
+        <p class="label">Quel est votre niveau de connaissance en web?</p>
+
+        <select name="Level" id="dropdown">
+          <option value="beginner">Débutant</option>
+          <option value="intermediate">Intermédiaire</option>
+          <option value="expert">Expert</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <p class="label">Recommendriez-vous la formation DWWM ?</p>
+        <label class="label">
+          <input type="radio" name="recommend" value="yes" /> Oui
+        </label>
+        <label class="label">
+          <input type="radio" name="recommend" value="maybe" /> Peut-être
+        </label>
+        <label class="label">
+          <input type="radio" name="recommend" value="no" /> Non
+        </label>
+      </div>
+
+      <div class="row">
+        <p class="label">
+          Que souhaiteriez-vous améliorer ?
+          <span class="small-text">(plusieurs choix possibles)</span>
+        </p>
+
+        <label class="label">
+          <input type="checkbox" name="preference" value="font-end-projects" />
+          Projets front-end
+        </label>
+
+        <label class="label">
+          <input type="checkbox" name="preference" value="Back-end-projects" />
+          Projets back-end
+        </label>
+
+        <label class="label">
+          <input type="checkbox" name="preference" value="cours" /> Cours
+        </label>
+
+        <label class="label">
+          <input type="checkbox" name="preference" value="exercices" />
+          Exercices
+        </label>
+
+        <label class="label">
+          <input type="checkbox" name="preference" value="supports" />
+          Supports
+        </label>
+      </div>
+
+      <div class="row">
+        <p class="label">Commentaires ou suggestions ?</p>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          class="textarea"
+          placeholder="Entrez votre commentaire..."
+        ></textarea>
+      </div>
+
+      <button id="submit" class="btn-submit">envoyer</button>
+    </form>
+  </body>
+</html>

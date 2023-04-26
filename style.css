@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(69, 23, 23, 0.5), rgba(84, 23, 23, 0.5)),
+    url("images/bg_building.jpg") no-repeat center/cover fixed;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+}
+#description {
+  color: white;
+}
+
+form {
+  background: white;
+  width: 50vw;
+  max-width: 1200px;
+  margin: 3rem auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 40px 40px 40px;
+  display: inline-block;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1170px;
+}
+
+input[type="checkbox"] {
+  filter: hue-rotate(500deg) brightness(1);
+}
+
+input[type="radio"] {
+  filter: hue-rotate(500deg) brightness(1);
+}
+
+input {
+  background-color: rgb(246, 244, 244);
+  border: 1px solid #0c6d8d;
+  border-radius: 1px;
+}
+
+#dropdown {
+  background-color: rgb(246, 244, 244);
+}
+
+textarea {
+  background-color: rgb(246, 244, 244);
+  border-radius: 1px;
+}
+
+#submit {
+  background-color: rgb(197, 13, 62);
+  color: white;
+  text-transform: capitalize;
+  font-size: bold;
+  width: 100%;
+  padding: 15px;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: white;
+  color: red;
+  transition: all ease 0.3s;
+}
+
+.small-text {
+  font-size: 12px;
+}
